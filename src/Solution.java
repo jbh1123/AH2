@@ -2,14 +2,14 @@ import java.lang.Math;
 
  class Solution {
     static boolean isPrime(int num) {
-        int i = 2;
         if ( num < 2 ) {
             return false;
         }
         else if ( num < 4 ) {
             return true;
         }
-
+        
+        int i = 2;
         while (i <= Math.sqrt(num)) {
             if ( num%i == 0 ) {
                 return false;
